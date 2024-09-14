@@ -56,15 +56,14 @@ public class CreaNuovoUtente {
 
         // Salva i dati dell'utente nel file "users.txt"
         try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(USERS_FILE_PATH, true)))) {
-        	 out.println(username + ":" + password + "  Nome:" + Nome1 + ", Cognome:" + Cognome1);
+        	 out.println(username + ":" + password + "|" + Nome1 + ":" + Cognome1);
         	 mostraMessaggio("Successo", "Registrazione completata", "L'utente è stato registrato con successo.");
-        	 
 
             User user = new User();
             user.setUserName(username);
             user.setPunteggio(0);
-            user.setEsercizio(1);
-            user.setLivello(1);
+            user.setEsercizio(0);
+            user.setLivello(0);
 
             signUpUser(user);
              SceneManager.cambiaScena("Login.fxml", event);
@@ -77,8 +76,9 @@ public class CreaNuovoUtente {
         try (BufferedReader br = new BufferedReader(new FileReader(USERS_FILE_PATH))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(":");
-                if (parts.length > 0 && parts[0].equals(username)) {
+                String[] parts = line.split("|");
+                String usernameCorrente = parts[0].split(":")[0];
+                if (usernameCorrente.equals(username)) {
                     return true; // Username trovato
                 }
             }
@@ -89,7 +89,7 @@ public class CreaNuovoUtente {
     }
     // Metodo per passare alla scena del Login
     @FXML
-    public void ScenaLogin(ActionEvent event) throws IOException {
+    public void ScenaLogin(ActionEvent event) {
         SceneManager.cambiaScena("Login.fxml", event);
     }
 

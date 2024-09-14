@@ -17,7 +17,7 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            
+
             <!-- ScrollPane per mostrare i risultati degli esercizi -->
             <ScrollPane fx:id="risultatiScrollPane" layoutX="73.0" layoutY="116.0" prefHeight="385.0" prefWidth="518.0">
                <content>
@@ -29,7 +29,7 @@
                   </Text>
                </content>
             </ScrollPane>
-            
+
             <!-- Pulsante per tornare alla dashboard -->
             <Button layoutX="733.0" layoutY="479.0" mnemonicParsing="false" onAction="#ScenaDashbord" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black;" text="Indietro" />
          </children>

@@ -12,38 +12,48 @@
 <!-- Definizione del layout principale di tipo AnchorPane, che funge da contenitore -->
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserLogin">
    <children>
-      <!-- Secondo AnchorPane per il contenuto della schermata di login, con sfondo sfumato verde -->
-      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="426.0" prefWidth="674.0" style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9); -fx-border-color: black; -fx-border-width: 2px;">
+      <!-- Secondo AnchorPane per il contenuto della schermata di login, con sfondo sfumato verde e angoli arrotondati -->
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="426.0" prefWidth="674.0"
+                  style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9);
+                         -fx-border-color: black;
+                         -fx-border-width: 2px;
+                         -fx-background-radius: 20;
+                         -fx-border-radius: 20;">
          <children>
-            <!-- Terzo AnchorPane che contiene il form di login, con sfondo bianco -->
-            <AnchorPane layoutX="148.0" layoutY="65.0" prefHeight="320.0" prefWidth="402.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9); -fx-border-color: black; -fx-border-width: 2px;">
+            <!-- Terzo AnchorPane che contiene il form di login, con sfondo bianco e angoli arrotondati -->
+            <AnchorPane layoutX="148.0" layoutY="65.0" prefHeight="320.0" prefWidth="402.0"
+                        style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9);
+                               -fx-border-color: black;
+                               -fx-border-width: 2px;
+                               -fx-background-radius: 15;
+                               -fx-border-radius: 15;">
                <children>
                   <!-- Campo di testo per l'inserimento dello username -->
                   <TextField fx:id="usernameField" alignment="CENTER" layoutX="125.0" layoutY="107.0" promptText="Username" />
-                  
+
                   <!-- Campo per l'inserimento della password, nascosta mentre si digita -->
                   <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="125.0" layoutY="147.0" promptText="Password" />
-                  
+
                   <!-- Testo "Login" in alto -->
                   <Text layoutX="156.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
                      <font>
                         <Font size="30.0" />
                      </font>
                   </Text>
-                  
+
                   <!-- Pulsante per inviare il form di login -->
                   <Button layoutX="137.0" layoutY="217.0" mnemonicParsing="false" onAction="#effettuaLogin" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: #81C784; -fx-text-fill: WHITE;" text="Login" />
-                  
+
                   <!-- Link per creare un nuovo utente -->
                   <Hyperlink layoutX="158.0" layoutY="279.0" onAction="#ScenaCreaNuovoUtente" prefHeight="26.0" prefWidth="88.0" style="-fx-text-fill: #81C784;" text="Crea Utente" />
                </children>
             </AnchorPane>
-            
+
             <!-- Pulsante nascosto per scopi decorativi -->
             <Button alignment="CENTER" layoutX="619.0" layoutY="2.0" minHeight="0.0" minWidth="22.0" mnemonicParsing="false" opacity="0.0" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #81C784;" />
          </children>
       </AnchorPane>
-      
+
       <!-- Pulsante "X" in alto a destra per chiudere la finestra -->
       <Button layoutX="712.0" layoutY="-2.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: #A5D6A7; -fx-border-color: black; -fx-border-width: 1px;" text="X">
          <font>

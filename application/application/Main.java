@@ -6,12 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
 import javafx.stage.*;
 
+import java.util.Objects;
+
 public class Main extends Application {
     
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("Inizio.fxml"));            
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Inizio.fxml")));
             primaryStage.initStyle(StageStyle.UNDECORATED);            
             primaryStage.setScene(new Scene(root));
             primaryStage.show();

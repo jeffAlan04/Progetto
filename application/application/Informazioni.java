@@ -12,15 +12,15 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Informazioni extends BaseController{
-	
-	@FXML
+
+    @FXML
     private Text nomeUtenteText; // Un elemento Text nella dashboard per mostrare il nome utente
-	
-	@FXML
+
+    @FXML
     private ScrollPane risultatiScrollPane;
 
-	@FXML
-	private Text risultatiText; // Usando solo Text
+    @FXML
+    private Text risultatiText; // Usando solo Text
 
     // Metodo chiamato ogni volta che si carica la scena
     public void initialize() {
@@ -32,7 +32,7 @@ public class Informazioni extends BaseController{
             risultatiText.setWrappingWidth(risultatiScrollPane.getWidth() - 20); // Imposta il wrapping width per adattarsi alla larghezza del ScrollPane
         }
     }
-    
+
     // Metodo per leggere i risultati dal file
     private String leggiRisultati(String username) {
         StringBuilder risultati = new StringBuilder();
@@ -60,20 +60,20 @@ public class Informazioni extends BaseController{
         }
         return risultati.length() > 0 ? risultati.toString() : "Nessun risultato trovato per l'utente " + username;
     }
-	
- // Metodo per cambiare alla scena del dashboard
+
+    // Metodo per cambiare alla scena del dashboard
     @FXML
     public void ScenaDashbord(ActionEvent event) {
-        SceneManager.cambiaScena("Dashbord.fxml", event);	
+        SceneManager.cambiaScena("Dashbord.fxml", event);
     }
-	
+
     // Metodo per gestire la chiusura della finestra
-	@FXML
+    @FXML
     public void ScenaChiusura(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         boolean conferma = Chiusura.confermaChiusuraDati(stage);
         if (conferma) {
-        	chiusuraApplicazione();
-        	}
-    	}
+            chiusuraApplicazione();
+        }
+    }
 }

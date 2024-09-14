@@ -65,8 +65,10 @@ public class UserLogin {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
             String linea;
             while ((linea = reader.readLine()) != null) {
-                String[] credenziali = linea.split(":");
-                if (credenziali[0].equals(username) && credenziali[1].equals(password)) {
+                String[] credenziali = linea.split("\\|");
+                String usernameCorrente = credenziali[0].split(":")[0];
+                String passwordCorrente = credenziali[0].split(":")[1];
+                if (usernameCorrente.equals(username) && passwordCorrente.equals(password)) {
                     return true; // Credenziali corrette
                 }
             }

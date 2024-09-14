@@ -8,8 +8,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class EsercizioJames extends BaseController {
-	
-	
+
+
     // Metodo per cambiare alla scena del dashboard
     @FXML
     public void ScenaDashbord(ActionEvent event) throws IOException {
@@ -30,8 +30,8 @@ public class EsercizioJames extends BaseController {
             SceneManager.cambiaScena("EsercizioIntermedioJ.fxml", event);
         } else {
             // Mostra un messaggio di avviso che indica che il livello facile non è stato completato
-            SceneManager.mostraMessaggio("Accesso Negato", "Livello Intermedio Bloccato", 
-                "Devi completare il livello facile prima di accedere al livello intermedio.");
+            SceneManager.mostraMessaggio("Accesso Negato", "Livello Intermedio Bloccato",
+                    "Devi completare il livello facile prima di accedere al livello intermedio.");
         }
     }
 
@@ -43,18 +43,24 @@ public class EsercizioJames extends BaseController {
             SceneManager.cambiaScena("EsercizioDifficileJ.fxml", event);
         } else {
             // Mostra un messaggio di avviso che indica che il livello intermedio non è stato completato
-            SceneManager.mostraMessaggio("Accesso Negato", "Livello Difficile Bloccato", 
-                "Devi completare il livello intermedio prima di accedere al livello difficile.");
+            SceneManager.mostraMessaggio("Accesso Negato", "Livello Difficile Bloccato",
+                    "Devi completare il livello intermedio prima di accedere al livello difficile.");
         }
     }
-    
+
+    //Metodo per passare alla scena di esercizio Alan
+    @FXML
+    public void ScenaInformazioni(ActionEvent event) throws IOException {
+        SceneManager.cambiaScena("Informazioni.fxml", event);
+    }
+
     // Metodo per gestire la chiusura della finestra
     @FXML
     public void ScenaChiusura(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         boolean conferma = Chiusura.confermaChiusuraDati(stage);
         if (conferma) {
-        	chiusuraApplicazione();
-        	}
-    	}
+            chiusuraApplicazione();
+        }
+    }
 }

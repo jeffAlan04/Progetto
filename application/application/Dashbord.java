@@ -10,19 +10,19 @@ import javafx.stage.Stage;
 
 public class Dashbord extends BaseController {
 
-	// Un elemento Text nella dashboard per mostrare il nome utente
+    // Un elemento Text nella dashboard per mostrare il nome utente
     @FXML
-    private Text nomeUtenteText; 
+    private Text nomeUtenteText;
 
     // Metodo per impostare il nome utente
     public void initialize() {
         String username = Sessione.getUsername();; // Salvo il nome utente
         nomeUtenteText.setText("Benvenuto, " + username + "!");
     }
-    
+
     @FXML
     public void ScenaLogout(ActionEvent event) throws IOException {
-    	logout();
+        logout();
         SceneManager.cambiaScena("Login.fxml", event);
     }
 
@@ -35,25 +35,18 @@ public class Dashbord extends BaseController {
     // Metodo per passare alla scena di descrizione Alan
     @FXML
     public void ScenaDescrizioneAlan(ActionEvent event) throws IOException {
-        SceneManager.cambiaScena("EsercizioAlan.fxml", event);
-    }
-
-
-    // Metodo per passare alla scena di esercizio Alan
-    @FXML
-    public void ScenaInformazioni(ActionEvent event) throws IOException {
-        SceneManager.cambiaScena("Informazioni.fxml", event);
+        SceneManager.cambiaScena("alan/EsercizioAlan.fxml", event);
     }
 
     // Metodo per chiudere l'applicazione con conferma
     @FXML
     public void ScenaChiusura(ActionEvent event) {
-     // Ottieni lo stage dalla sorgente dell'evento
+        // Ottieni lo stage dalla sorgente dell'evento
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-     // Mostra un messaggio di conferma e gestisci la chiusura
+        // Mostra un messaggio di conferma e gestisci la chiusura
         boolean conferma = Chiusura.confermaChiusuraDati(stage);
         if (conferma) {
-        	chiusuraApplicazione();
-        	}
-    	}
+            chiusuraApplicazione();
+        }
+    }
 }
