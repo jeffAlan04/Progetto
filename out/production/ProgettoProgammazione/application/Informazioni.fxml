@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Informazioni">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0" style="-fx-background-color: #8F00FF;">
+         <children>
+            <Text fx:id="nomeUtenteText" layoutX="212.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ecco tutte le informazioni sugli esercizi di ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ScrollPane fx:id="risultatiScrollPane" layoutX="73.0" layoutY="116.0" prefHeight="385.0" prefWidth="518.0">
+               <content>
+                  <Text fx:id="risultatiText" textAlignment="CENTER" wrappingWidth="518.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+               </content>
+            </ScrollPane>
+            <Button layoutX="733.0" layoutY="479.0" mnemonicParsing="false" onAction="#ScenaDashbord" text="Indietro" />
+         </children>
+      </AnchorPane>
+      <Text fill="#8f00ff" layoutX="393.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informazioni" wrappingWidth="144.9215087890625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="867.0" layoutY="2.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: #8F00FF;" text="X">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

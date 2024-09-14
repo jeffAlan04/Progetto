@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreaNuovoUtente">
+   <children>
+      <!-- Outer Background with Gradient, Border, and Rounded Corners -->
+      <AnchorPane layoutX="11.0" layoutY="11.0" prefHeight="440.0" prefWidth="688.0"
+                  style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9); -fx-border-color: black; -fx-border-width: 2px; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+         <children>
+            <!-- Inner Background with Gradient, Border, and Rounded Corners -->
+            <AnchorPane layoutX="67.0" layoutY="23.0" prefHeight="378.0" prefWidth="551.0"
+                        style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9); -fx-border-color: black; -fx-border-width: 2px; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+               <children>
+                  <!-- Title Text for Creating New User -->
+                  <Text layoutX="136.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crea nuovo utente">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+
+                  <!-- Text Fields for User Information -->
+                  <TextField fx:id="nomeField" alignment="CENTER" layoutX="185.0" layoutY="105.0" promptText="Nome"
+                             style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                  <TextField fx:id="cognomeField" alignment="CENTER" layoutX="184.0" layoutY="147.0" promptText="Cognome"
+                             style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                  <TextField fx:id="usernameField" alignment="CENTER" layoutX="185.0" layoutY="205.0" promptText="Username"
+                             style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                  <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="184.0" layoutY="243.0" promptText="Password"
+                                 style="-fx-background-radius: 5px; -fx-border-radius: 5px;" />
+
+                  <!-- Save and Cancel Buttons -->
+                  <Button layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onAction="#salvaUtente" prefHeight="34.0" prefWidth="128.0"
+                          style="-fx-background-color: #32CD32 linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;
+                                 -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Salva" />
+                  <Button layoutX="295.0" layoutY="330.0" mnemonicParsing="false" onAction="#ScenaLogin" prefHeight="34.0" prefWidth="128.0"
+                          style="-fx-background-color: #32CD32 linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;
+                                 -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Annulla" />
+               </children>
+            </AnchorPane>
+
+            <!-- Hidden Button (Matching Hidden Style from Previous Theme) -->
+            <Button alignment="CENTER" layoutX="619.0" layoutY="2.0" minHeight="0.0" minWidth="22.0" mnemonicParsing="false" opacity="0.0" prefHeight="0.0" prefWidth="54.0"
+                    style="-fx-background-color: #81C784;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

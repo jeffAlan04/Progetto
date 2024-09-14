@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="626.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.alan.RisultatiA">
+    <!-- Outer AnchorPane with rounded corners and border -->
+    <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0"
+                style="-fx-background-color: linear-gradient(to bottom right, #a8e063, #56ab2f);
+                         -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-border-width: 2px;">
+        <!-- Inner AnchorPane with rounded corners and border -->
+        <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0"
+                    style="-fx-background-color: #eafaf1; -fx-background-radius: 15px;
+                               -fx-border-radius: 15px; -fx-border-color: black; -fx-border-width: 2px;">
+
+            <!-- Centered Complimento Text with smaller font -->
+            <Text fx:id="complimento" fill="#388e3c" strokeType="OUTSIDE"
+                  strokeWidth="0.0" wrappingWidth="500.0" text="Complimenti!">
+                <font>
+                    <Font size="12.0"/> <!-- Smaller font size -->
+                </font>
+                <!-- Anchor to center horizontally and adjust vertical positioning -->
+                <AnchorPane.topAnchor>200.0</AnchorPane.topAnchor>
+                <AnchorPane.leftAnchor>125.0</AnchorPane.leftAnchor>
+                <AnchorPane.rightAnchor>125.0</AnchorPane.rightAnchor>
+            </Text>
+
+            <!-- Centered Risultati Text below Complimento Text with smaller font -->
+            <Text fx:id="risultati" fill="#388e3c" strokeType="OUTSIDE"
+                  strokeWidth="0.0" wrappingWidth="500.0">
+                <font>
+                    <Font size="12.0"/> <!-- Smaller font size -->
+                </font>
+                <!-- Anchor to center horizontally and place below Complimento -->
+                <AnchorPane.topAnchor>230.0</AnchorPane.topAnchor>
+                <AnchorPane.leftAnchor>125.0</AnchorPane.leftAnchor>
+                <AnchorPane.rightAnchor>125.0</AnchorPane.rightAnchor>
+            </Text>
+
+            <!-- Pulsante per uscire with rounded corners -->
+            <Button fx:id="esciButton" layoutX="50.0" layoutY="400.0" mnemonicParsing="false"
+                    prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #e53935; -fx-text-fill: white;
+                                 -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Esci"/>
+
+        </AnchorPane>
+    </AnchorPane>
+
+    <!-- Title text styled in green -->
+    <Text fill="#2c6e49" layoutX="371.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Risultati" wrappingWidth="178.521484375">
+        <font>
+            <Font size="22.0"/>
+        </font>
+    </Text>
+</AnchorPane>

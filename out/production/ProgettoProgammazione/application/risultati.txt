@@ -1,0 +1,91 @@
+Data: 2024-09-08T00:58:53.757566100
+Username: mariokid
+Nome Esercizio: Esercizio James
+Livello: facile
+Punteggio: 3
+Stato: successo
+====================================
+Data: 2024-09-08T01:16:42.479100500
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 1
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:00:50.078342600
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 1
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:26:15.053657400
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 0
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:54:47.862068300
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 0
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:54:54.954145600
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: intermedio
+Punteggio: 0
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:55:01.010333
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: difficile
+Punteggio: 0
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:56:52.831015900
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 1
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:56:58.277542300
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 1
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:59:51.267457700
+Username: mariodown
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 2
+Stato: fallimento
+====================================
+Data: 2024-09-08T02:59:54.749451300
+Username: mariodown
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 2
+Stato: fallimento
+====================================
+Data: 2024-09-08T03:00:06.062010500
+Username: mariodown
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: intermedio
+Punteggio: 0
+Stato: fallimento
+====================================
+Data: 2024-09-08T03:00:14.147899600
+Username: mariodown
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: difficile
+Punteggio: 0
+Stato: fallimento
+====================================

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EsercizioJames">
+   <children>
+      <!-- Outer AnchorPane with green gradient background -->
+      <AnchorPane layoutX="25.0" layoutY="37.0" prefHeight="554.0" prefWidth="842.0"
+                  style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9); -fx-border-color: black; -fx-border-width: 2px;">
+         <children>
+            <!-- Inner AnchorPane with lighter green gradient background -->
+            <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0"
+                        style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9); -fx-border-color: black; -fx-border-width: 2px;">
+               <children>
+                  <!-- Title Text with green color -->
+                  <Text fill="#388E3C" layoutX="294.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esercizio James">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+
+                  <!-- AnchorPane for "Es 1 Facile" with green background -->
+                  <AnchorPane layoutX="14.0" layoutY="38.0" prefHeight="216.0" prefWidth="291.0"
+                              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;">
+                     <children>
+                        <Text layoutX="64.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Es 1 Facile" wrappingWidth="152.90191650390625">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="84.0" layoutY="143.0" mnemonicParsing="false" onAction="#ScenaEsercizioFacile"
+                                prefHeight="26.0" prefWidth="100.0" text="Inizia"
+                                style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" />
+                     </children>
+                  </AnchorPane>
+
+                  <!-- AnchorPane for "Es 2 Intermedio" with green background -->
+                  <AnchorPane layoutX="444.0" layoutY="38.0" prefHeight="216.0" prefWidth="291.0"
+                              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;">
+                     <children>
+                        <Text layoutX="64.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Es 2 Intermedio" wrappingWidth="152.90191650390625">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="96.0" layoutY="156.0" mnemonicParsing="false" onAction="#ScenaEsercizioIntermedio"
+                                prefHeight="26.0" prefWidth="100.0" text="Inizia"
+                                style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" />
+                     </children>
+                  </AnchorPane>
+
+                  <!-- AnchorPane for "Es 3 Difficile" with green background -->
+                  <AnchorPane layoutX="229.0" layoutY="268.0" prefHeight="216.0" prefWidth="291.0"
+                              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;">
+                     <children>
+                        <Text layoutX="64.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Es 3 Difficile" wrappingWidth="152.90191650390625">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="96.0" layoutY="157.0" mnemonicParsing="false" onAction="#ScenaEsercizioDifficile"
+                                prefHeight="26.0" prefWidth="100.0" text="Inizia"
+                                style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" />
+                     </children>
+                  </AnchorPane>
+
+                  <!-- "Indietro" Button with green theme -->
+                  <Button layoutX="591.0" layoutY="468.0" mnemonicParsing="false" onAction="#ScenaDashbord"
+                          prefHeight="31.0" prefWidth="100.0"
+                          style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Indietro">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+
+      <!-- Close button with green theme -->
+      <Button layoutX="867.0" mnemonicParsing="false" onAction="#ScenaChiusura"
+              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="X">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

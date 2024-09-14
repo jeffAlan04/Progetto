@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/22"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreaNuovoUtente">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="27.0" prefHeight="470.0" prefWidth="660.0" style="-fx-background-color: #8F00FF;">
+         <children>
+            <AnchorPane layoutX="18.0" layoutY="16.0" prefHeight="438.0" prefWidth="628.0" style="-fx-background-color: #F0F8FF;">
+               <children>
+                  <TextField fx:id="usernameField" alignment="CENTER" layoutX="248.0" layoutY="207.0" promptText="Username" />
+                  <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="248.0" layoutY="249.0" promptText="Password" />
+                  <Text layoutX="176.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crea Nuovo Utente">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="138.0" layoutY="377.0" mnemonicParsing="false" onAction="#salvaUtente" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: #8F00FF;" text="Salva" />
+                  <TextField fx:id="usernameField1" alignment="CENTER" layoutX="248.0" layoutY="103.0" promptText="Nome" />
+                  <TextField fx:id="usernameField11" alignment="CENTER" layoutX="248.0" layoutY="143.0" promptText="Cognome" />
+                  <Button layoutX="333.0" layoutY="375.0" mnemonicParsing="false" onAction="#ScenaLogin" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: #8F00FF;" text="Indietro" />
+               </children>
+            </AnchorPane>
+            <Button alignment="CENTER" layoutX="619.0" layoutY="2.0" minHeight="0.0" minWidth="22.0" mnemonicParsing="false" opacity="0.0" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: #8F00FF;" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="710.0" layoutY="1.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: #8F00FF;" text="X">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
