@@ -4,91 +4,67 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.paint.Color?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0"
-            prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Dashbord">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Dashbord">
    <children>
-      <!-- Outer Background with Gradient, Border, and Rounded Corners -->
-      <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0"
-                  style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9);
-                   -fx-border-color: black; -fx-border-width: 2px; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+      <!-- Sfondo esterno con gradiente e bordo -->
+      <AnchorPane layoutX="22.0" layoutY="40.0" prefHeight="565.0" prefWidth="858.0" style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9); -fx-border-color: black; -fx-border-width: 2px;">
          <children>
-            <!-- Inner Background with Gradient, Border, and Rounded Corners -->
-            <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0"
-                        style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9);
-                         -fx-border-color: black; -fx-border-width: 2px; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+            <!-- Sfondo interno con gradiente e bordo -->
+            <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9); -fx-border-color: black; -fx-border-width: 2px;">
                <children>
-                  <!-- Pseudocodifica Ordinata Section with Rounded Corners -->
-                  <AnchorPane layoutX="43.0" layoutY="91.0" prefHeight="275.0" prefWidth="303.0"
-                              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784);
-                               -fx-border-color: black; -fx-border-width: 1px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                  <!-- Sezione Pseudocodifica Ordinata -->
+                  <AnchorPane layoutX="43.0" layoutY="91.0" prefHeight="275.0" prefWidth="303.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;">
                      <children>
                         <Text layoutX="35.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pseudocodifica Ordinata">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Text>
-                        <Button layoutX="101.0" layoutY="187.0" mnemonicParsing="false" onAction="#ScenaDescrizioneJames" prefHeight="26.0" prefWidth="100.0" text="Inizia"
-                                style="-fx-background-color: lightblue; -fx-border-color: black;
-                                 -fx-border-width: 1px; -fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                        <!-- Pulsante per avviare Pseudocodifica Ordinata -->
+                        <Button layoutX="101.0" layoutY="187.0" mnemonicParsing="false" onAction="#ScenaDescrizioneJames" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Inizia" />
                      </children>
                   </AnchorPane>
 
-                  <!-- Java Debug Quest Section with Rounded Corners -->
-                  <AnchorPane layoutX="402.0" layoutY="91.0" prefHeight="275.0" prefWidth="303.0"
-                              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784);
-                               -fx-border-color: black; -fx-border-width: 1px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                  <!-- Sezione Modifica (Esercizio Alan) -->
+                  <AnchorPane layoutX="402.0" layoutY="91.0" prefHeight="275.0" prefWidth="303.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;">
                      <children>
-                        <Text layoutX="55.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Debug Quest">
+                        <Text layoutX="56.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Debug Quest">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="21.0" />
                            </font>
                         </Text>
-                        <Button layoutX="95.0" layoutY="186.0" mnemonicParsing="false" onAction="#ScenaDescrizioneAlan" prefHeight="26.0" prefWidth="100.0" text="Inizia"
-                                style="-fx-background-color: lightblue; -fx-border-color: black; -fx-border-width: 1px; -fx-background-radius: 5px; -fx-border-radius: 5px;" />
+                        <!-- Pulsante per avviare Java Debug Quest -->
+                        <Button layoutX="95.0" layoutY="186.0" mnemonicParsing="false" onAction="#ScenaDescrizioneAlan" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Inizia" />
                      </children>
                   </AnchorPane>
 
-                  <!-- Benvenuto Text -->
+                  <!-- Testo Benvenuto -->
                   <Text fx:id="nomeUtenteText" layoutX="263.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Benvenuto!" wrappingWidth="309.3367919921875">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Text>
 
-                  <!-- Informazioni Section with Rounded Corners -->
-                  <AnchorPane layoutX="242.0" layoutY="375.0" prefHeight="113.0" prefWidth="303.0"
-                              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
-                     <children>
-                        <Text layoutX="91.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informazioni">
-                           <font>
-                              <Font size="21.0" />
-                           </font>
-                        </Text>
-                        <Button layoutX="101.0" layoutY="78.0" mnemonicParsing="false" onAction="#ScenaInformazioni" prefHeight="26.0" prefWidth="100.0" text="Inizia"
-                                style="-fx-background-color: lightblue;
-                                -fx-border-color: black; -fx-border-width: 1px; -fx-background-radius: 5px; -fx-border-radius: 5px;" />
-                     </children>
-                  </AnchorPane>
+                  <!-- Pulsante Informazioni -->
+                  <Button layoutX="572.0" layoutY="436.0" mnemonicParsing="false" onAction="#ScenaInformazioni" prefHeight="59.0" prefWidth="162.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Informazioni" />
 
+                  <!-- Pulsante Logout -->
+                  <Button layoutX="690.0" layoutY="7.0" mnemonicParsing="false" onAction="#ScenaLogout" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Logout" />
                </children>
             </AnchorPane>
          </children>
       </AnchorPane>
 
-      <!-- Dashbord Title -->
+      <!-- Titolo Dashbord -->
       <Text fill="green" layoutX="393.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P.L.A.Y" wrappingWidth="116.9215087890625">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
 
-      <!-- Close Button -->
-      <Button layoutX="867.0" layoutY="2.0" mnemonicParsing="false" onAction="#ScenaChiusura"
-              style="-fx-background-color: #A5D6A7; -fx-border-color: black; -fx-border-width: 1px; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="X">
+      <!-- Pulsante di chiusura -->
+      <Button layoutX="867.0" layoutY="2.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: #A5D6A7; -fx-border-color: black; -fx-border-width: 1px;" text="X">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

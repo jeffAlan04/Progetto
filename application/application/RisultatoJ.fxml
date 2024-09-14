@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Import delle classi necessarie per l'interfaccia utente -->
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
+
+<!-- Layout principale di tipo AnchorPane -->
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RisultatoJ">
    <children>
-      <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0" style="-fx-background-color: #8F00FF;">
+      <!-- Secondo AnchorPane con sfondo verde per contenere i risultati -->
+      <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 2px;">
          <children>
+            <!-- Terzo AnchorPane per i risultati, con sfondo bianco -->
             <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0" style="-fx-background-color: #F0F8FF;">
                <children>
-                  <Button layoutX="375.0" layoutY="457.0" mnemonicParsing="false" onAction="#ScenaEsercizioJames" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #8F00FF;" text="Nuovo esercizio" />
-                  <Button layoutX="542.0" layoutY="458.0" mnemonicParsing="false" onAction="#ScenaChiusura" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #8F00FF;" text="Esci" />
+                  <!-- Pulsante per iniziare un nuovo esercizio -->
+                  <Button layoutX="375.0" layoutY="457.0" mnemonicParsing="false" onAction="#ScenaEsercizioJames" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black;" text="Nuovo esercizio" />
+                  
+                  <!-- Pulsante per uscire dall'applicazione -->
+                  <Button layoutX="542.0" layoutY="458.0" mnemonicParsing="false" onAction="#ScenaChiusura" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black;" text="Esci" />
+                  
+                  <!-- ScrollPane per visualizzare il testo dei risultati -->
                   <ScrollPane fx:id="risultatiScrollPane" layoutX="40.0" layoutY="39.0" prefHeight="279.0" prefWidth="518.0">
                      <content>
+                        <!-- Testo contenente i risultati -->
                         <Text fx:id="risultatoText" textAlignment="CENTER" wrappingWidth="518.0">
                            <font>
                               <Font size="20.0" />
@@ -25,12 +36,16 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <Text fill="#8f00ff" layoutX="393.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Risultato" wrappingWidth="116.9215087890625">
+      
+      <!-- Titolo "Risultato" in alto -->
+      <Text fill="#388E3C" layoutX="393.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Risultato" wrappingWidth="116.9215087890625">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Button layoutX="867.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: #8F00FF;" text="X">
+      
+      <!-- Pulsante "X" per chiudere la finestra -->
+      <Button layoutX="867.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black;" text="X">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

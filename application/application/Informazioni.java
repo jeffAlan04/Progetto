@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Informazioni {
+public class Informazioni extends BaseController{
 	
 	@FXML
     private Text nomeUtenteText; // Un elemento Text nella dashboard per mostrare il nome utente
@@ -36,7 +36,7 @@ public class Informazioni {
     // Metodo per leggere i risultati dal file
     private String leggiRisultati(String username) {
         StringBuilder risultati = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/application/risultati.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\james\\Desktop\\application (2)\\application(2)\\application\\risultati.txt"))) {
             String linea;
             boolean utenteTrovato = false;
             while ((linea = reader.readLine()) != null) {
@@ -61,15 +61,19 @@ public class Informazioni {
         return risultati.length() > 0 ? risultati.toString() : "Nessun risultato trovato per l'utente " + username;
     }
 	
-	@FXML
+ // Metodo per cambiare alla scena del dashboard
+    @FXML
     public void ScenaDashbord(ActionEvent event) {
         SceneManager.cambiaScena("Dashbord.fxml", event);	
     }
 	
+    // Metodo per gestire la chiusura della finestra
 	@FXML
-	public void ScenaChiusura(ActionEvent event) {
-        // Gestisce la chiusura dell'applicazione
+    public void ScenaChiusura(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Chiusura.confermaChiusura(stage);
-    }
+        boolean conferma = Chiusura.confermaChiusuraDati(stage);
+        if (conferma) {
+        	chiusuraApplicazione();
+        	}
+    	}
 }

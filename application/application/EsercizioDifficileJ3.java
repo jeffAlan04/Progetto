@@ -1,8 +1,5 @@
 package application;
 
-import application.BaseController;
-import application.Chiusura;
-import application.SceneManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,25 +10,35 @@ import javafx.stage.Stage;
 
 import java.util.Collections;
 
-public class EsercizioDifficileJ3  extends BaseController {
+public class EsercizioDifficileJ3  extends BaseController{
 	@FXML
     private ListView<String> Lista3;
 	
 	// Lista di riferimento con l'ordine corretto per questo esercizio
     private final ObservableList<String> ordineCorretto = FXCollections.observableArrayList(
     		"INIZIO",
-            "DICHIARA una variabile messaggio",
-            "RIPETI fino a quando messaggio è uguale a \"stop\":",
-            "Leggi messaggio dall'utente",
-            "Se messaggio contiene almeno tre numeri distinti",
-            "e messaggio contiene una parola che inizia con una lettera maiuscola e termina con una lettera minuscola",
-            "e messaggio non contiene la parola 'escludi', stampa messaggio",
-            "FINE RIPETI",
-            "FINE"
+    	    "DICHIARA una variabile \"sequenza\" con 5 numeri casuali",
+    	    "DICHIARA una variabile \"tentativi\"=0",
+    	    "Stampa \"Memorizza questa sequenza:\", sequenza",
+    	    "Pausa di 5 secondi (simulata)",
+    	    "RIPETI fino a quando \"tentativi\" è minore di 3",
+    	    "DICHIARA una variabile \"risposta\"",
+    	    "Leggi \"risposta\" dall'utente",
+    	    "SE \"risposta\" è uguale a \"sequenza\"",
+    	    "Stampa \"Hai vinto!\"",
+    	    "Esci dal ciclo",
+    	    "ALTRIMENTI",
+    	    "Incrementa \"tentativi\" di 1",
+    	    "SE \"tentativi\" è uguale a 3",
+    	    "Stampa \"Hai esaurito i tentativi. Hai perso.\"",
+    	    "FINE RIPETI",
+    	    "FINE"
     );
 
+    // Metodo chiamato dopo che il controller è stato caricato
     @FXML
     private void initialize() {
+        // Crea una copia dell'ordine corretto e mescola gli elementi
     	ObservableList<String> elementiMescolati = FXCollections.observableArrayList(ordineCorretto);
         Collections.shuffle(elementiMescolati);
         
@@ -59,6 +66,9 @@ public class EsercizioDifficileJ3  extends BaseController {
     @FXML
     public void ScenaChiusura(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Chiusura.confermaChiusura(stage);
-    }
+        boolean conferma = Chiusura.confermaChiusuraDati(stage);
+        if (conferma) {
+        	chiusuraApplicazione();
+        	}
+    	}
 }

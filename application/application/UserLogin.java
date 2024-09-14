@@ -36,35 +36,26 @@ public class UserLogin {
 
         if (loginRiuscito) {
             SceneManager.mostraMessaggio("Successo", "Login completato", "Benvenuto " + username + "!");
-
-            // Salva l'username nella sessione
             Sessione.setUsername(username);
-
-            // Passa alla dashboard
             ScenaDashbord(event);
         } else {
             SceneManager.mostraMessaggio("Errore", "Login fallito", "Username o password errati.");
         }
     }
-
+    // Metodo per passare alla scena per creare un nuovo utente
     @FXML
     public void ScenaCreaNuovoUtente(ActionEvent event) {
-        SceneManager.mostraMessaggio("Info", "Crea Nuovo Utente", "Questa funzione non è ancora implementata.");
-    }
-
-    @FXML
-    public void ScenaCreaNuovoUtente1(ActionEvent event) {
         SceneManager.cambiaScena("NuovoUtente.fxml", event);
     }
-
+    // Metodo per passare alla scena della Dashboard
     @FXML
     public void ScenaDashbord(ActionEvent event) {
         SceneManager.cambiaScena("Dashbord.fxml", event);
     }
 
+    // Metodo per gestire la chiusura della finestra con conferma
     @FXML
     public void ScenaChiusura(ActionEvent event) {
-        // Gestisce la chiusura dell'applicazione
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Chiusura.confermaChiusura(stage);
     }

@@ -1,8 +1,5 @@
 package application;
 
-import application.BaseController;
-import application.Chiusura;
-import application.SceneManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,25 +10,41 @@ import javafx.stage.Stage;
 
 import java.util.Collections;
 
-public class EsercizioDifficileJ2  extends BaseController {
+public class EsercizioDifficileJ2  extends BaseController{
 	@FXML
     private ListView<String> Lista2;
 	
 	// Lista di riferimento con l'ordine corretto per questo esercizio
     private final ObservableList<String> ordineCorretto = FXCollections.observableArrayList(
     		"INIZIO",
-            "DICHIARA una variabile messaggio",
-            "RIPETI fino a quando messaggio è uguale a \"esci\":",
-            "Leggi messaggio dall'utente",
-            "Se messaggio contiene almeno una parola palindroma",
-            "   e messaggio contiene almeno un carattere speciale",
-            "   e messaggio ha una lunghezza compresa tra 15 e 30 caratteri, stampa messaggio",
-            "FINE RIPETI",
-            "FINE"
+    	    "DICHIARA una lista \"libri\"",
+    	    "RIPETI fino a quando \"comando\" è diverso da \"esci\"",
+    	    "Leggi \"comando\" dall'utente",
+    	    "SE \"comando\" è uguale a \"aggiungi libro\"",
+    	    "Leggi \"titolo\" del libro",
+    	    "Aggiungi \"titolo\" alla lista \"libri\" con stato \"disponibile\"",
+    	    "ALTRIMENTI SE \"comando\" è uguale a \"prenota libro\"",
+    	    "Leggi \"titolo\" del libro",
+    	    "SE \"titolo\" è disponibile",
+    	    "Cambia stato di \"titolo\" a \"prenotato\"",
+    	    "ALTRIMENTI",
+    	    "Stampa \"Il libro non è disponibile\"",
+    	    "ALTRIMENTI SE \"comando\" è uguale a \"restituisci libro\"",
+    	    "Leggi \"titolo\" del libro",
+    	    "SE \"titolo\" è prenotato",
+    	    "Cambia stato di \"titolo\" a \"disponibile\"",
+    	    "ALTRIMENTI",
+    	    "Stampa \"Il libro non è prenotato\"",
+    	    "ALTRIMENTI SE \"comando\" è uguale a \"stampa lista\"",
+    	    "Stampa la lista dei libri con i loro stati",
+    	    "FINE RIPETI",
+    	    "FINE"
     );
 
+    // Metodo chiamato dopo che il controller è stato caricato
     @FXML
     private void initialize() {
+        // Crea una copia dell'ordine corretto e mescola gli elementi
     	ObservableList<String> elementiMescolati = FXCollections.observableArrayList(ordineCorretto);
         Collections.shuffle(elementiMescolati);
         
@@ -61,6 +74,9 @@ public class EsercizioDifficileJ2  extends BaseController {
     @FXML
     public void ScenaChiusura(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Chiusura.confermaChiusura(stage);
-    }
+        boolean conferma = Chiusura.confermaChiusuraDati(stage);
+        if (conferma) {
+        	chiusuraApplicazione();
+        	}
+    	}
 }

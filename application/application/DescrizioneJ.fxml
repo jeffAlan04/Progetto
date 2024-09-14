@@ -1,63 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DescrizioneJ">
    <children>
-      <!-- Outer AnchorPane with green gradient background -->
-      <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0"
-                  style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9); -fx-border-color: black; -fx-border-width: 2px;">
+      <!-- Pannello esterno con sfondo a gradiente verde -->
+      <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0" style="-fx-background-color: linear-gradient(to bottom, #E8F5E9, #C8E6C9); -fx-border-color: black; -fx-border-width: 2px;">
          <children>
-            <!-- Inner AnchorPane with lighter green gradient background -->
-            <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0"
-                        style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9); -fx-border-color: black; -fx-border-width: 2px;">
+            <!-- Pannello interno con gradiente più chiaro -->
+            <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8F5E9); -fx-border-color: black; -fx-border-width: 2px;">
                <children>
-                  <!-- "Avanti" Button with green theme -->
-                  <Button layoutX="451.0" layoutY="472.0" mnemonicParsing="false" onAction="#ScenaEsercizioJames"
-                          prefHeight="26.0" prefWidth="91.0"
-                          style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Avanti" />
+                  <!-- Pulsante "Avanti" per procedere all'esercizio successivo -->
+                  <Button layoutX="451.0" layoutY="472.0" mnemonicParsing="false" onAction="#ScenaEsercizioJames" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Avanti" />
 
-                  <!-- "Annulla" Button with green theme -->
-                  <Button layoutX="604.0" layoutY="472.0" mnemonicParsing="false" onAction="#ScenaDashbord"
-                          prefHeight="26.0" prefWidth="91.0"
-                          style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Annulla" />
+                  <!-- Pulsante "Annulla" per tornare alla dashboard -->
+                  <Button layoutX="604.0" layoutY="472.0" mnemonicParsing="false" onAction="#ScenaDashbord" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="Annulla" />
 
-                  <!-- Instruction Text -->
-                  <Text layoutX="51.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                        text="COME SVOLGERE I VARI ESERCIZI, RIODINA TRASCINANDO LE VARIA CASSELE" wrappingWidth="646.3880615234375">
+                  <!-- Testo con istruzioni per l'utente su come svolgere gli esercizi -->
+                  <Text layoutX="51.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COME SVOLGERE I VARI ESERCIZI, RIODINA TRASCINANDO LE VARIA CASSELE" wrappingWidth="646.3880615234375">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Text>
 
-                  <!-- ListView for items -->
+                  <!-- ListView per visualizzare gli elementi da riordinare -->
                   <ListView fx:id="ListaD1" layoutX="51.0" layoutY="306.0" prefHeight="165.0" prefWidth="330.0" />
                </children>
             </AnchorPane>
 
-            <!-- Instruction Text for ordering -->
+            <!-- Testo aggiuntivo per specificare l'azione da compiere -->
             <Text layoutX="113.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riordina nella sequenza corretta">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
 
-            <!-- Another ListView -->
+            <!-- Altra ListView per ulteriori elementi da riordinare -->
             <ListView fx:id="ListaD" layoutX="94.0" layoutY="97.0" prefHeight="165.0" prefWidth="330.0" />
          </children>
       </AnchorPane>
 
-      <!-- Title Text with green fill -->
-      <Text fill="#388E3C" layoutX="345.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrizione Facile J" wrappingWidth="261.72149658203125">
+      <!-- Testo del titolo della scena con colorazione verde -->
+      <Text fill="#388E3C" layoutX="211.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esempio Esercizio Pseudocodifica Ordinata" wrappingWidth="514.5214233398438">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
 
-      <!-- Close button with green theme -->
-      <Button layoutX="867.0" mnemonicParsing="false" onAction="#ScenaChiusura"
-              style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="X">
+      <!-- Pulsante di chiusura con stile verde -->
+      <Button layoutX="867.0" mnemonicParsing="false" onAction="#ScenaChiusura" style="-fx-background-color: linear-gradient(to bottom, #A5D6A7, #81C784); -fx-border-color: black; -fx-border-width: 1px;" text="X">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

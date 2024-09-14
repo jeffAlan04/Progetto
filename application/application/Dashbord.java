@@ -1,21 +1,29 @@
 package application;
 
 import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class Dashbord {
+public class Dashbord extends BaseController {
 
+	// Un elemento Text nella dashboard per mostrare il nome utente
     @FXML
-    private Text nomeUtenteText; // Un elemento Text nella dashboard per mostrare il nome utente
+    private Text nomeUtenteText; 
 
     // Metodo per impostare il nome utente
     public void initialize() {
         String username = Sessione.getUsername();; // Salvo il nome utente
         nomeUtenteText.setText("Benvenuto, " + username + "!");
+    }
+    
+    @FXML
+    public void ScenaLogout(ActionEvent event) throws IOException {
+    	logout();
+        SceneManager.cambiaScena("Login.fxml", event);
     }
 
     // Metodo per passare alla scena di descrizione James
@@ -27,7 +35,7 @@ public class Dashbord {
     // Metodo per passare alla scena di descrizione Alan
     @FXML
     public void ScenaDescrizioneAlan(ActionEvent event) throws IOException {
-        SceneManager.cambiaScena("alan/EsercizioAlan.fxml", event);
+        SceneManager.cambiaScena("EsercizioAlan.fxml", event);
     }
 
 
@@ -40,7 +48,12 @@ public class Dashbord {
     // Metodo per chiudere l'applicazione con conferma
     @FXML
     public void ScenaChiusura(ActionEvent event) {
+     // Ottieni lo stage dalla sorgente dell'evento
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Chiusura.confermaChiusura(stage);
-    }
+     // Mostra un messaggio di conferma e gestisci la chiusura
+        boolean conferma = Chiusura.confermaChiusuraDati(stage);
+        if (conferma) {
+        	chiusuraApplicazione();
+        	}
+    	}
 }

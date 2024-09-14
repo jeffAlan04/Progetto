@@ -1,8 +1,5 @@
 package application;
 
-import application.BaseController;
-import application.Chiusura;
-import application.SceneManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -78,7 +75,7 @@ public class RisultatoJ extends BaseController {
     @FXML
     public void ScenaEsercizioJames(ActionEvent event) {
         // Determina se il risultato è un successo o un fallimento
-        String stato = calcolaPunteggio(livelloAttivo) > 2 ? "successo" : "fallimento";
+        String stato = calcolaPunteggio(livelloAttivo) > 1 ? "successo" : "fallimento";
         
         // Salva i risultati prima di cambiare scena
         salvaRisultato("Pseudocodifica Ordinata", livelloAttivo, calcolaPunteggio(livelloAttivo), stato);
@@ -91,10 +88,8 @@ public class RisultatoJ extends BaseController {
     public void ScenaChiusura(ActionEvent event) {
     	// Salva i risultati come "fallimento" se non è stato completato correttamente
         int punteggio = calcolaPunteggio(livelloAttivo);
-        String stato = punteggio > 2 ? "successo" : "fallimento";
-        salvaRisultato("Pseudocodifica Ordinata", livelloAttivo, punteggio, stato);
-    	
-        // Gestisce la chiusura dell'applicazione
+        String stato = punteggio > 1 ? "successo" : "fallimento";
+        salvaRisultato("Pseudocodifica Ordinata", livelloAttivo, punteggio, stato);    	
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Chiusura.confermaChiusura(stage);
     }

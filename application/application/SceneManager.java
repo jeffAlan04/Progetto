@@ -32,11 +32,9 @@ public class SceneManager {
         try {
             FXMLLoader loader = new FXMLLoader(SceneManager.class.getResource(fxmlFile));
             Parent root = loader.load();
-
             // Ottieni il controller e passa l'oggetto consumer per operazioni aggiuntive
             Object controller = loader.getController();
             controllerConsumer.accept(controller);
-
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
