@@ -1,0 +1,3 @@
+a:a|A:A
+aa:aa|aa:aa
+a1:a1|a:a

@@ -1,0 +1,20 @@
+[
+  {
+    "userName": "a",
+    "punteggio": 45,
+    "livello": 1,
+    "esercizio": 0
+  },
+  {
+    "userName": "aa",
+    "punteggio": 60,
+    "livello": 2,
+    "esercizio": 0
+  },
+  {
+    "userName": "a1",
+    "punteggio": 105,
+    "livello": 2,
+    "esercizio": 2
+  }
+]
