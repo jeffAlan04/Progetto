@@ -72,7 +72,7 @@ public class DescrizioneDifficileA {
                 "Ora dovrai superare il livello più difficile.\n" +
                 "Come nei livelli precedenti, ti verrà mostrato un commento ed un codice\n" +
                 "se c'è, trova gli errori e correggili direttamente sul codice\n" +
-                "Potrai usare il pulsante dei suggerimenti, ma stai attento a non usufruirne.\n";
+                "Potrai usare il pulsante per vedere la soluzione, ma stai attento a non usufruirne.\n";
 
         gameRulesTextArea.setText(regole);
 

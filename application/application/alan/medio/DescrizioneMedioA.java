@@ -72,7 +72,7 @@ public class DescrizioneMedioA {
                 " che però avrà una falla.\n" +
                 "Inserisci nello spazio apposito, la porzione di codice che ritieni\n" +
                 "corretta, affinché commento e codice coincidano.\n" +
-                "Ricorda che il pulsante dei suggerimenti ti assegnerà metà dei punti.";
+                "Ricorda che il pulsante della soluzione ti assegnerà metà dei punti.";
 
         gameRulesTextArea.setText(regole);
 

@@ -73,7 +73,7 @@ public class DescrizioneFacileA {
                 "e tre opzioni.\n" +
                 "Scegli quella che ritieni più oppurtuna in modo da rendere il codice\n" +
                 "coerente con il commento.\n" +
-                "Se ti trovi in difficoltà potrai utlizzare il pulsante per i suggerimenti,\n" +
+                "Se ti trovi in difficoltà potrai utlizzare il pulsante per vedere la soluzione,\n" +
                 "ma ricorda che ti verranno assegnati solo la metà dei punti.";
 
         gameRulesTextArea.setText(regole);

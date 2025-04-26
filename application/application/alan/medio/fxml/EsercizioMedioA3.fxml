@@ -63,7 +63,7 @@
             <Button fx:id="helpButton" layoutX="340.0" layoutY="450.0" mnemonicParsing="false"
                     prefHeight="26.0" prefWidth="91.0"
                     style="-fx-background-color: #FEBE10; -fx-text-fill: white; -fx-background-radius: 5px; -fx-border-radius: 5px;"
-                    text="Suggerimento"/>
+                    text="Soluzione"/>
 
             <!-- Pulsante per uscire with rounded corners -->
             <Button fx:id="esciButton" layoutX="50.0" layoutY="450.0" mnemonicParsing="false"

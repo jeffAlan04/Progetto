@@ -30,7 +30,8 @@ public class EsercizioDifficileA1 {
         String commento = "// Inversione di una stringa\n";
 
         // Codice predefinito nell'area di testo
-        String initialCode = "public class MaxMatrice {\n" +
+        String initialCode = "// Inversione di una stringa\n" +
+                "public class MaxMatrice {\n" +
                 "    public static void main(String[] args) {\n" +
                 "        int[][] matrice = {\n" +
                 "            {1, 2, 3},\n" +
@@ -49,7 +50,8 @@ public class EsercizioDifficileA1 {
                 "    }\n" +
                 "}\n";
 
-        String correctCode = "public class MaxMatrice {\n" +
+        String correctCode = "// Inversione di una stringa\n" +
+                "public class MaxMatrice {\n" +
                 "    public static void main(String[] args) {\n" +
                 "        int[][] matrice = {\n" +
                 "            {1, 2, 3},\n" +
