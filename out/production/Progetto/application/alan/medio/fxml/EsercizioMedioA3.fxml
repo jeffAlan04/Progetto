@@ -20,7 +20,7 @@
                                -fx-border-radius: 15px; -fx-border-color: black; -fx-border-width: 2px;">
             <!-- ProgressBar -->
             <ProgressBar fx:id="progressBar" layoutX="50.0" layoutY="55.0" prefWidth="650.0"
-                         progress="0.0"/> <!-- Initial progress set to 0.0 -->
+                         progress="1.0" style="-fx-accent: #81C784;"/> <!-- Initial progress set to 0.0 -->
 
             <!-- Numero progressivo di esercizio -->
             <Text fill="#2c6e49" layoutX="50.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0"
@@ -42,7 +42,7 @@
             <AnchorPane layoutX="50.0" layoutY="80.0" prefHeight="180.0" prefWidth="650.0"
                         style="-fx-background-color: white; -fx-background-radius: 10px;
                                      -fx-border-radius: 10px; -fx-border-color: black; -fx-border-width: 1px;">
-                <Text fx:id="codeArea" layoutX="20.0" layoutY="20.0" style="-fx-font-family: 'Courier New';"/>
+                <Text fx:id="codeArea" layoutX="20.0" layoutY="10.0" style="-fx-font-family: 'Courier New';"/>
             </AnchorPane>
 
             <!-- Area di testo per la risposta con rounded corners and border -->

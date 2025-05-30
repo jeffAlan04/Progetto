@@ -27,11 +27,10 @@ public class EsercizioDifficileA1 {
     @FXML
     public void initialize() {
 
-        String commento = "// Inversione di una stringa\n";
+        String commento = "// Stampa del valore massimo di una matrice\n";
 
         // Codice predefinito nell'area di testo
-        String initialCode = "// Inversione di una stringa\n" +
-                "public class MaxMatrice {\n" +
+        String initialCode = "public class MaxMatrice {\n" +
                 "    public static void main(String[] args) {\n" +
                 "        int[][] matrice = {\n" +
                 "            {1, 2, 3},\n" +
@@ -50,7 +49,7 @@ public class EsercizioDifficileA1 {
                 "    }\n" +
                 "}\n";
 
-        String correctCode = "// Inversione di una stringa\n" +
+        String correctCode = "// Stampa del valore massimo di una matrice\n" +
                 "public class MaxMatrice {\n" +
                 "    public static void main(String[] args) {\n" +
                 "        int[][] matrice = {\n" +

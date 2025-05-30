@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="626.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.alan.Modal">
+    <!-- Outer AnchorPane with rounded corners and border -->
+    <AnchorPane layoutX="22.0" layoutY="39.0" prefHeight="565.0" prefWidth="858.0"
+                style="-fx-background-color: linear-gradient(to bottom right, #a8e063, #56ab2f);
+                         -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-border-width: 2px;">
+        <!-- Inner AnchorPane with rounded corners and border -->
+        <AnchorPane layoutX="54.0" layoutY="28.0" prefHeight="509.0" prefWidth="750.0"
+                    style="-fx-background-color: #eafaf1; -fx-background-radius: 15px;
+                               -fx-border-radius: 15px; -fx-border-color: black; -fx-border-width: 2px;">
+
+            <Text fill="#2c6e49" layoutX="50.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Codice corretto: " wrappingWidth="650.0">
+                <font>
+                    <Font size="28.0"/>
+                </font>
+            </Text>
+
+            <!-- Left-aligned Suggerimento Text at the top-left of the inner AnchorPane -->
+            <Text fx:id="suggerimento" fill="#388e3c" strokeType="OUTSIDE"
+                  strokeWidth="0.0" wrappingWidth="700.0" layoutX="50.0" layoutY="50.0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Text>
+
+        </AnchorPane>
+    </AnchorPane>
+
+    <!-- Title text styled in green -->
+    <Text fill="#2c6e49" layoutX="371.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Suggerimento" wrappingWidth="178.521484375">
+        <font>
+            <Font size="22.0"/>
+        </font>
+    </Text>
+</AnchorPane>

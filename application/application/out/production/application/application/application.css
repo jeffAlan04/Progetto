@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+.root {
+    -fx-font-family: 'Roboto';
+}
+
+.text {
+    -fx-font-family: 'Roboto';
+}
+
+.button {
+    -fx-font-family: 'Roboto';
+    -fx-font-size: 16px;
+}
+
+/* Additional styling for specific components */
+.text-title {
+    -fx-font-size: 36px;
+    -fx-fill: #2E7D32;
+}
+
+.text-section {
+    -fx-font-size: 32px;
+}
+
+.button-large {
+    -fx-font-size: 16px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #004D40;
+    -fx-text-fill: white;
+}
+
+.button-back {
+    -fx-font-size: 16px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #004D40;
+    -fx-text-fill: white;
+}

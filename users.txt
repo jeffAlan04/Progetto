@@ -1,3 +1,9 @@
 a:a|A:A
 aa:aa|aa:aa
 a1:a1|a:a
+a11:a|al:al
+a11:a11|a:a
+j04A:1122|Jeff Alan:Shuyinta
+j04:123|Jeff Alan:Shuyinta
+a04:123|Jeff Alan:Shuyinta
+aa:1|a:a

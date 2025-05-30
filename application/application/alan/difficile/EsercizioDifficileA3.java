@@ -30,11 +30,10 @@ public class EsercizioDifficileA3 {
         String commento = "// Inversione di una stringa\n";
 
         // Codice predefinito nell'area di testo
-        String initialCode = "// Inversione di una stringa\n" +
-                "public class InversioneStringa{\n" +
+        String initialCode = "public class InversioneStringa{\n" +
                 "\tpublic static void main(String[] args){\n" +
                 "\t\tint[] array1 = {1, 2, -4, -5, 10, 12, 8};\n" +
-                "        System.out.println(valoreMinore(array1, 0, 1));\n" +
+                "\t\tSystem.out.println(valoreMinore(array1, 0, 1));\n" +
                 "\t}\n" +
                 "\tpublic static int valoreMinore(int[] arr, int indexMin, int index){\n" +
                 "\t\tif (index == arr.length)\n" +
@@ -51,7 +50,7 @@ public class EsercizioDifficileA3 {
                 "public class InversioneStringa{\n" +
                 "\tpublic static void main(String[] args){\n" +
                 "\t\tint[] array1 = {1, 2, -4, -5, 10, 12, 8};\n" +
-                "        System.out.println(valoreMinore(array1, 0, 1));\n" +
+                "\t\tSystem.out.println(valoreMinore(array1, 0, 1));\n" +
                 "\t}\n" +
                 "\tpublic static int valoreMinore(int[] arr, int indexMin, int index){\n" +
                 "\t\tif (index == arr.length)\n" +

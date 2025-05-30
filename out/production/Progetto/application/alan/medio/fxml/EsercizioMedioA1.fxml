@@ -20,7 +20,7 @@
                                -fx-border-radius: 15px; -fx-border-color: black; -fx-border-width: 2px;">
             <!-- ProgressBar -->
             <ProgressBar fx:id="progressBar" layoutX="50.0" layoutY="55.0" prefWidth="650.0"
-                         progress="0.0"/> <!-- Initial progress set to 0.0 -->
+                         progress="0.33" style="-fx-accent: #81C784;"/> <!-- Initial progress set to 0.0 -->
 
             <!-- Numero progressivo di esercizio -->
             <Text fill="#2c6e49" layoutX="50.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0"

@@ -1,0 +1,14 @@
+Data: 2024-09-11 20:48
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 1
+Stato: fallimento
+====================================
+Data: 2024-09-11 20:49
+Username: mariokid
+Nome Esercizio: Pseudocodifica Ordinata
+Livello: facile
+Punteggio: 3
+Stato: successo
+====================================

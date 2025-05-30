@@ -30,8 +30,7 @@ public class EsercizioDifficileA2 {
         String commento = "//Ordinare un array di numeri in ordine crescente usando l'ordinamento a bolle.\n\n";
 
         // Codice predefinito nell'area di testo
-        String initialCode = "//Ordinare un array di numeri in ordine crescente usando l'ordinamento a bolle.\n\n" +
-                "public class BubbleSort {\n" +
+        String initialCode = "public class BubbleSort {\n" +
                 "    public static void main(String[] args) {\n" +
                 "        int[] numeri = {5, 2, 9, 1, 5, 6};\n" +
                 "        for (int i = 0; i < numeri.length; i++) {\n" +
@@ -70,7 +69,7 @@ public class EsercizioDifficileA2 {
                 "    }\n" +
                 "}\n";
 
-        //codeArea.appendText(commento);
+        codeArea.appendText(commento);
         codeArea.appendText(initialCode);
 
         String prossimoLivello = "fxml/EsercizioDifficileA3.fxml";
